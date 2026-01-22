@@ -1,8 +1,20 @@
 {
-  "mse": 0.012655825520023917,
-  "rmse": 0.1124981134065097,
-  "mae": 0.0740704170781608,
-  "r2": 0.9865623375711552,
+  "mse": 0.0008705734553577301,
+  "rmse": 0.029505481784877368,
+  "mae": 0.020390487826507906,
+  "r2": 0.999075645267541,
   "n_rows": 428618,
-  "n_features_input": 6
+  "n_features_input": 8,
+  "numeric_features": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "year"
+  ],
+  "categorical_features": [
+    "company",
+    "month"
+  ]
 }

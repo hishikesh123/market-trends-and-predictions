@@ -23,7 +23,14 @@ ASX stock data (2015–2020) to predict **Adjusted Closing Price**.
 """)
 
 # Load trained pipeline (preprocessing + model)
-pipe = joblib.load("models/pipeline.joblib")
+import joblib
+import xgboost as xgb
+
+preprocessor = joblib.load("models/preprocessor.joblib")
+
+xgb_model = xgb.XGBRegressor()
+xgb_model.load_model("models/xgb_model.json")
+
 
 st.subheader("Input stock features")
 
@@ -43,6 +50,14 @@ input_df = pd.DataFrame([{
     "company": company
 }])
 
+expected_cols = ["open", "high", "low", "close", "volume", "company"]
+missing = [c for c in expected_cols if c not in input_df.columns]
+
+if missing:
+    st.error(f"Missing required columns: {missing}")
+    st.stop()
+
 if st.button("Predict Adjusted Close"):
-    prediction = pipe.predict(input_df)[0]
+    X = preprocessor.transform(input_df)
+    prediction = xgb_model.predict(X)[0]
     st.success(f"Predicted Adjusted Close: **AUD {prediction:.2f}**")
