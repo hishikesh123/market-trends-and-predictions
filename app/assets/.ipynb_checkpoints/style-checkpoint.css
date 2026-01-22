@@ -1,0 +1,47 @@
+/* app/assets/style.css */
+
+/* Global page */
+.main {
+  padding-top: 0.5rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+/* Card-like blocks */
+.block-container {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+div[data-testid="stMetric"] {
+  border: 1px solid rgba(49, 51, 63, 0.15);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+/* Buttons */
+.stButton button {
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+}
+
+/* Inputs */
+.stTextInput input, .stNumberInput input, .stSelectbox select {
+  border-radius: 10px !important;
+}
+
+/* Tables */
+div[data-testid="stDataFrame"] {
+  border: 1px solid rgba(49, 51, 63, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+  border-right: 1px solid rgba(49, 51, 63, 0.12);
+}
