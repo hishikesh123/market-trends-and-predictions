@@ -1,4 +1,4 @@
-# Global Analytics: Financial Markets & Price Dynamics
+# Australian Stock Exchange Analytics – Market Trends & Price Dynamics
 
 ## Overview
 This project presents an end-to-end exploratory data analysis and visualization of financial market data, with a focus on price trends, trading volumes, and seasonal patterns. It applies statistical and visual analytics techniques to support data-driven insights for investors, analysts, and policymakers.
@@ -62,15 +62,15 @@ Detailed methodology is documented in the project notebooks and reports.
 │   ├── raw/
 │   └── processed/
 ├── notebooks/
-│   └── Phase2_Group51.ipynb
+│   └── Phase1 #(Preprocessing)
+|   └── Phase2 #(Choosing the model and traininig)
 ├── reports/
-│   ├── Phase1_Group51.pdf
-│   └── Phase2_Group51.pdf
-├── docs/
+│   ├── figures
+├── scripts/
 │   └── literature_review.pdf
 └── README.md
 
-
+```
 ---
 
 ## Key Insights
