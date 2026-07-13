@@ -98,4 +98,5 @@ Detailed methodology is documented in the project notebooks and reports.
 ## Author
 
 Hishikesh Phukan
+Ashif Parwez
 Master of Data Science (RMIT University)
